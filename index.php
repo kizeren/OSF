@@ -1,11 +1,13 @@
 <?php
 
 define( 'IN_APPLICATION', 1);
-
+session_start();
 
 
   include("config/config.php");
   require_once 'jsonrpcphp/includes/jsonRPCClient.php';
+  include("includes/infomsg.php");
+
 
 $khs =0;
 
@@ -68,7 +70,24 @@ print "Coins - $coins<br/>";
 #print"Proof of Stake - $PoS";
 
 
+?>
 
+        <form id="submit" name="submit" method="post" action="includes/submit.php">
+            <table width="300" border="0" align="center" cellpadding="2" cellspacing="0">
+                     <tr>
+                        <td><b><?php print"$symbol"; ?> Address</b></td>
+                        <td><input name="address" type="address" class="textfield" id="address" /></td>
+
+                    
+
+                    <td colspan="3"><input type="submit" name="Submit" value="Submit" class="myButton"/></td>
+                
+            </table>
+        </form>
+
+
+
+<?php
 
 include("includes/footer.php");
 ?>
