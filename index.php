@@ -13,8 +13,8 @@ print"<title>Test script</title>";
 print"<meta http-equiv=\"refresh\" content=\"60\" />";
 print"</head>";
 print"</body>";
-print"<center> <img src=\"logos/" . $symbol . ".png\"></center>";
- 
+print"<center> <img src=\"logos/" . $symbol . ".png\"></center><br/>";
+print"<center><font size=\"10\">" . $name . " Faucet.</font></center><br/>"; 
   $bitcoin = new jsonRPCClient('http://' . $user . ':' . $password .'@' . $host . ':' . $port. '/');
  
 //  print_r($bitcoin->getmininginfo());
