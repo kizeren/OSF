@@ -1,5 +1,9 @@
 <?php
 
+if( !defined( 'IN_APPLICATION' ) ) die('Hacker!');
+
+
+
 #Daemon connection information
 
 $host = "WHEREYOURWALLETIS";

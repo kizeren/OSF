@@ -1,5 +1,9 @@
 <?php
 
+define( 'IN_APPLICATION', 1);
+
+
+
   include("config/config.php");
   require_once 'jsonrpcphp/includes/jsonRPCClient.php';
 
